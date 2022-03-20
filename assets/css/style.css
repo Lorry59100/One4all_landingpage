@@ -1,0 +1,36 @@
+img {
+    max-height: 200px;
+    display: block;
+}
+
+header {
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: gray;
+    background-position: center;
+}
+
+.previous {
+    margin-right:  5px;
+}
+
+.next {
+ margin-left: 5px;
+}
+
+.infos {
+    margin-top: 10px;
+}
+
+.menu {
+    margin-right: 50px;
+}
+
+.infos_and_next {
+    height: 300px;
+    width: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 300px;
+}

@@ -12,63 +12,379 @@
     <!-- FEUILLES DE STYLE -->
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/f42724b8b3.js" crossorigin="anonymous"></script>
+
+    <!-- WEB FONTS -->
+    <style>@import url('https://fonts.googleapis.com/css2?family=Hurricane&display=swap');</style>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');</style>  
+
     <title>One4All</title>
 </head>
 <body>
 
     <!-- HEADER -->
-    <header style="background-image: url('assets/img/slide_header/HeaderOne4all.jpg');" class="d-flex align-items-center justify-content-between">
+    <header>
+        <nav class="navbar navbar-gray bg-dark">
+            <div class="menu d-flex align-items-center justify-content-between">
+              <a class="navbar-brand" href="#">
+                <img src="assets/img/Logo/logo One4all.png" alt="" width="200" height="100" class="d-inline-block align-text-top">
+              </a>
+
+              <div class="links d-flex justify-content-around">
+              <a href="#présentation" class="text-decoration-none text-white"><h5>Présentation</h5></a>
+              <a href="#philosophie" class="text-decoration-none text-white"><h5>Philosophie</h5></a>
+              <a href="#constat" class="text-decoration-none text-white"><h5>Notre Constat</h5></a>
+              <a href="#revolution" class="text-decoration-none text-white"><h5>Notre Révolution</h5></a>
+              <a href="#soutien" class="text-decoration-none text-white"><h5>Nos Soutiens</h5></a>
+              <a href="#histoire" class="text-decoration-none text-white"><h5>Notre Histoire</h5></a>
+              <a href="#reseaux" class="text-decoration-none text-white"><h5>Notre Réseau</h5></a>
+              <a href="#evenements" class="text-decoration-none text-white"><h5>Nos Evenements</h5></a>
+              </div>
+              
+                
+            </div>
+            
+        </nav>
+
+    <div class="d-flex align-items-center justify-content-between HeaderOne4all" style="background-image: url('assets/img/slide_header/HeaderOne4all.jpg');">
 
         <div class="logo">
             <img src="assets/img/Logo/logo One4all.png" alt="">
         </div>
 
-        <div class="infos_and_next d-flex flex-column justify-content-center align-items-center justify-content-around" style="background-image: url('assets/img/slide_header/Slide-MARTIN-LK.jpg');">
+        <div class="carousel d-flex align-items-center justify-content-center">
 
-            <div class="carousel d-flex">
+            <div class="previous"><button class="btn-secondary" id="btn-previous"><</button></div>
 
-                <div class="previous">
-                    <button type="button" class="btn btn-secondary"><</button>
+            <div id="baleine">
+                <h3 class="text-center text-white">Animalier</h3>
+                <div class="img-carousel">
+                    <img src="assets/img/slide_header/Slide-baleine.jpg" alt="" srcset="">
                 </div>
-    
-                <div class="text-info d-flex align-items-end">
-                    <h5 class="text-white">Animalier</h5>
-                </div>
-        
-                <div class="next">
-                    <button type="button" class="btn btn-secondary">></button>
+
+                <div class="infos d-flex justify-content-center">
+                    <a href="#/animalier" class="btn btn-success btn-lg " tabindex="-1" role="button" aria-disabled="true">Call to action</a>
                 </div>
 
             </div>
-           
 
-            <div class="infos d-flex justify-content-center">
-                <a href="#/animalier" class="btn btn-success btn-lg " tabindex="-1" role="button" aria-disabled="true">En savoir plus</a>
+            <div class="d-none" id="environnement">
+                <h3 class="text-center text-white">Environnement</h3>
+                <div class="img-carousel">
+                    <img src="assets/img/slide_header/SLIDE-environnement.jpg" alt="" srcset="">
+                </div>
+
+                <div class="infos d-flex justify-content-center">
+                    <a href="#/environnement" class="btn btn-success btn-lg " tabindex="-1" role="button" aria-disabled="true">Call to action</a>
+                </div>
+
             </div>
-            
+
+            <div class="d-none" id="humanitaire">
+                <h3 class="text-center text-white">Humanitaire</h3>
+                <div class="img-carousel">
+                    <img src="assets/img/slide_header/SLIDE-humanitaire.jpg" alt="" srcset="">
+                </div>
+
+                <div class="infos d-flex justify-content-center">
+                    <a href="#/humanitaire" class="btn btn-success btn-lg " tabindex="-1" role="button" aria-disabled="true">Call to action</a>
+                </div>
+
+            </div>
+
+            <div class="d-none" id="ligue">
+                <h3 class="text-center text-white">Ligue des Héros</h3>
+                <div class="img-carousel">
+                    <img src="assets/img/slide_header/Slide-Ligue.jpg" alt="" srcset="">
+                </div>
+
+                <div class="infos d-flex justify-content-center">
+                    <a href="#/ligue" class="btn btn-success btn-lg " tabindex="-1" role="button" aria-disabled="true">Call to action</a>
+                </div>
+
+            </div>
+
+            <div class="d-none" id="mlk">
+                <h3 class="text-center text-white">Martin Luther King</h3>
+                <div class="img-carousel">
+                    <img src="assets/img/slide_header/Slide-MARTIN-LK.jpg" alt="" srcset="">
+                </div>
+
+                <div class="infos d-flex justify-content-center">
+                    <a href="#/mlk" class="btn btn-success btn-lg " tabindex="-1" role="button" aria-disabled="true">Call to action</a>
+                </div>
+
+            </div>
+
+            <div class="d-none" id="reseau">
+                <h3 class="text-center text-white">Notre Réseau</h3>
+                <div class="img-carousel">
+                    <img src="assets/img/slide_header/Slide-Notre-réseau.jpg" alt="" srcset="">
+                </div>
+
+                <div class="infos d-flex justify-content-center">
+                    <a href="#/reseau" class="btn btn-success btn-lg " tabindex="-1" role="button" aria-disabled="true">Call to action</a>
+                </div>
+
+            </div>
+
+            <div class="d-none" id="planet">
+                <h3 class="text-center text-white">Planete</h3>
+                <div class="img-carousel">
+                    <img src="assets/img/slide_header/Slide-planete.jpg" alt="" srcset="">
+                </div>
+
+                <div class="infos d-flex justify-content-center">
+                    <a href="#/planet" class="btn btn-success btn-lg " tabindex="-1" role="button" aria-disabled="true">Call to action</a>
+                </div>
+
+            </div>
+
+            <div class="d-none" id="ukraine">
+                <h3 class="text-center text-white">Ukraine</h3>
+                <div class="img-carousel">
+                    <img src="assets/img/slide_header/Slide-UK2.png" alt="" srcset="">
+                </div>
+
+                <div class="infos d-flex justify-content-center">
+                    <a href="#/ukraine" class="btn btn-success btn-lg " tabindex="-1" role="button" aria-disabled="true">Call to action</a>
+                </div>
+
+            </div>
+
+            <div class="next"><button class="btn-secondary" id="btn-next">></button></div>
+
         </div>
+    </div>
 
-        <div class="dropdown menu">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
-              Menu
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-              <li><button class="dropdown-item" type="button">Action</button></li>
-              <li><button class="dropdown-item" type="button">Another action</button></li>
-              <li><button class="dropdown-item" type="button">Something else here</button></li>
-            </ul>
-          </div>
-        
     </header>
 
     <!-- MAIN -->
     <main>
 
+        <section id="présentation" class="text-center">
+
+            <h1 class="text-center">Présentation</h1>
+            <h2>Le Mouvement Altruiste #One4All a pour but de fédérer tous les Hommes <br> – indépendamment de leur religion, ethnie ou culture – <br> qui adhèrent à l’idéologie de l’Altruisme.</h2>
+
+            <br>
+            <br>
+            <h2>#One4All milite activement et mondialement dans plusieurs domaines :</h2>
+
+            <div class="annexe d-flex">
+
+                <div class="fleurs d-flex justify-content-center">
+                    <img src="assets/img/A - Présentation/Fleur-5domaines.png" alt="">
+                </div>
+    
+                <div class="more d-flex flex-column justify-content-center">
+                    <h3>Afin d’atteindre ses objectifs, le Mouvement #One4All se construit grâce à la mise en commun de la culture, des connaissances, des ressources et de la détermination de chaque militant où qu’il soit dans le monde.</h3>
+                <div>
+                    <button type="button" class="btn btn-secondary">En savoir plus</button>
+                </div>
+                    
+                </div>
+
+            </div>
+
+        </section>
+
+        <br>
+        <div class="split"></div>
+        <br>
+
+        <section id="philosophie">
+            <h1 class="text-center">Philosophie de l'altruisme</h1>
+            <div class="ghandi">
+                <div class="img-ghandi d-flex justify-content-center" style="background-image: url('assets/img/Philosophie/bg-yellow.png')">
+                    <img src="assets/img/Philosophie/ideologie-altruiste.png" alt="" class="ghandi">
+                </div>
+            </div>
+
+            <div class="vebole d-flex bg-dark">
+                <div class="more d-flex flex-column justify-content-center">
+                <h3 class="text-white text-vebole">Le Mouvement Mondial #One4All est entièrement autonome, non guidé par des intérêts individuels ou économiques mais alimenté par l’énergie, la motivation et la pugnacité de ses membres et de ses adhérents. 
+                    Comme sa devise l’indique “ Un pour tous, Tous pour un”, le Mouvement Altruiste prône la force collective, l’union, l’abnégation, la confiance indéfectible et la réussite désintéressée   au profit d’une réussite collective et Universelle.
+                    #One4All est fondé intégralement sur ces principes qui composent le ciment solidarisant chaque militant.</h3>
+
+                    <div class="button d-flex justify-content-center">
+                        
+                    </div>
+                </div>
+
+                <div class="img-vebole">
+                    <img src="assets/img/Philosophie/Don Vebole citation.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <br>
+        <div class="split"></div>
+        <br>
+
+        <section id="constat" class="d-flex align-items-center">
+            <div class="constats">
+                <div class="constat-title">
+                    <img src="assets/img/Constat/bouton-consta.png" alt="" srcset="">
+                </div>
+                <div class="img-constat">
+                    <img src="assets/img/Constat/imaneConstat.jpg" alt="" srcset="">
+                </div>
+            </div>
+            <div class="constat-texte">
+                <h3>La crise du Covid-19 a révélé les failles de notre système mondial à réagir face à une crise sanitaire d’ampleur internationale. Les gouvernements ont montré leurs limites quant à l’application de mesures communes et efficaces. Chaque pays se comparant pour évaluer sa propre gestion de la crise.
+                    Le conflit en Ukraine est un autre témoignage de l’incapacité des organisations mondiales à maintenir la paix du fait de leurs interdépendances économiques. 
+                    Ce modèle sociètale pour l’Humanité est menacé. Il semble aujourd’hui plus que nécessaire de proposer une autre voie, plus respectueuse des êtres qui peuplent la Terre grâce à un Altruisme mondial, sans frontières entre les nations et les Hommes.
+                    Ce constat demande d’agir maintenant pour trouver une alternative pérenne au système actuel.</h3>
+            </div>
+        </section>
+
+        <br>
+        <div class="split"></div>
+        <br>
+
+        <section id="revolution">
+            <img src="assets/img/Revolution/Slide-revolution.jpg" alt="" srcset="">
+            <div class="textbtn-revolution d-flex flex-column">
+                <div class="text-revolution">
+                    <h3>Le déséquilibre mondial que nous connaissons est inédit dans les chroniques de l’Humanité. Crises sanitaires, dérèglements climatique, conflit sociaux et guerres.
+                        Tous ces signes démontrent la fragilité de notre système économique et social qui se fonde sur la recherche perpétuelle du profit par l’exploitation sans limites des ressources de notre planète, quelles soient humaines ou naturelles.
+                        Ces événements impactent l’intégralité de l’Humanité et paralysent tous les domaines à travers le monde. Les limites du système capitaliste actuel sont mis en lumière et prouvent qu’à l’heure où la division entre les humains n’a jamais été aussi grande, la solidarité est la seule issue au destin funeste qui menace notre civilisation.
+                        L’ambition du Mouvement #One4All est simple : 
+                        Créer un nouveau système Social et Économique fondé sur la philosophie de l’Altruisme par la mise en place d’un Gouvernement Mondial dans 165 pays.</h3>
+                </div>
+                <div class="btn-revolution d-flex justify-content-center">
+                    <button type="button" class="btn btn-secondary">En savoir plus</button>
+                </div>
+            </div>
+        </section>
+
+        <br>
+        <div class="split"></div>
+        <br>
+
+        <section id="soutien" style="background-image: url('assets/img/Soutiens/fondLigueLHA.jpg');">
+            <div class="img-ligue d-flex justify-content-center">
+                <img src="assets/img/Soutiens/Titre-ligue.png" alt="">
+            </div>
+            <div class="ytb-more d-flex">
+            <div class="more-soutien d-flex flex-column justify-content-center">
+                <h3 class="text-center">Le Mouvement #One4All suscite l’intérêt de nombreuses personnalités et influenceurs qui voient en notre organisation, un système alternatif et un modèle fiable, 
+                susceptible de permettre des avancées significatives à l’échelle planétaire.</h3>
+                <div class="btn-soutien d-flex justify-content-center">
+                    <button type="button" class="btn btn-secondary">En savoir plus</button>
+                </div>
+            </div>
+
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/7R0y3vKv034" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        </section>
+
+        <br>
+        <div class="split"></div>
+        <br>
+
+        <section id="histoire" style="background-image: url('assets/img/Histoire/parchemin1000x1000.jpg');">
+            <div class="title d-flex justify-content-center">
+                <img src="assets/img/Histoire/titre histoire du mouvement.png" alt="">
+            </div>
+
+            <div class="text-samurai d-flex align-items-center">
+                <div class="text-histoire">
+                    <h3>Il y a 30 ans, un élève de CP à l’école du Mandinet en Île-de-France, exprimait devant sa classe son souhait de changer le monde, de stopper la maltraitance animale et d’éradiquer la famine. Un simple exercice qui consistait à illustrer le métier que chaque enfant désirait exercer à l’âge adulte… Devenu adulte, l’objectif de cet enfant utopiste s’est renforcé et concrétisé au fil des épreuves rencontrées sur son parcours.</h3>
+                </div>
+                <div class="img-samurai">
+                    <img src="assets/img/Histoire/samurai.png" alt="">
+                </div>
+            </div>
+            
+            <div class="img-revolution-vebole d-flex justify-content-center">
+                <img src="assets/img/Histoire/parchemin copie.png" alt="">
+            </div>
+
+            <div class="img-pastille-text d-flex align-items-center">
+                <div class="img-pastille">
+                    <img src="assets/img/Histoire/soleil rouge.png" alt="">
+                </div>
+                <div class="text-pastille">
+                    <h3>Cet illuminé réaliste, c’est Don Vebole, venez découvrir son histoire et son projet humanitaire au travers du Mouvement #One4All …</h3>
+                </div>
+            </div>
+
+            <div class="btn-histoire d-flex justify-content-center">
+                <button type="button" class="btn btn-secondary">En savoir plus</button>
+            </div>
+        </section>
+
+        <br>
+        <div class="split"></div>
+        <br>
+
+        <section id="reseaux">
+            <h1 class="text-center">Notre Réseau</h1>
+
+            <div class="reseau-text-img d-flex align-items-center">
+                <div class="txt-reseau">
+                    <h3>De nombreuses personnes à travers le monde se lèvent et marchent ensemble dans le but de faire émerger 
+                        le Mouvement #One4All et relayer le message de la philosophie Altruiste au plus grand nombre. 
+                        Rejoignez notre communauté internationale et diffusez le message de #One4All à travers le monde.</h3>
+
+                        <div class="btn-histoire d-flex justify-content-center">
+                            <button type="button" class="btn btn-secondary">En savoir plus</button>
+                        </div>
+                </div>
+                <div id="img-beyrouth">
+                    <img src="assets/img/Reseau/Followers/Beyrouth.jpg" alt="">
+                </div>
+                <div class="d-none" id="img-italia">
+                    <img src="assets/img/Reseau/Followers/Italia.jpg" alt="">
+                </div>
+                <div class="d-none" id="img-la">
+                    <img src="assets/img/Reseau/Followers/LA.jpg" alt="">
+                </div>
+                <div class="d-none" id="img-tokyo">
+                    <img src="assets/img/Reseau/Followers/Tokyo.jpg" alt="">
+                </div>
+            </div>
+
+        </section>
+
+        <br>
+        <div class="split"></div>
+        <br>
+
+        <section id="evenements">
+            <div class="img-event">
+                <img src="assets/img/Events/Slide-events.jpg" alt="">
+            </div>
+            <div class="text-events-btn">
+                <div class="text-events">
+                    <h3>#One4All se veut être un mouvement fédérateur à fort potentiel de communication.Pour réussir à porter notre message, 
+                        mener nos actions et fédérer dans chaque pays, régions ou ville du monde, nous misons sur différents types d’évènements…Venez les découvrir !!!</h3>
+                </div>
+                <div class="btn-events d-flex justify-content-center">
+                    <button type="button" class="btn btn-secondary">En savoir plus</button>
+                </div>
+            </div>
+
+        </section>
+
+        <br>
+
     </main>
 
     <!-- FOOTER -->
-    <footer>
+    <footer style="background-image: url('assets/img/Footer/palmtree.jpg');">
+        <script src="assets/js/app.js"></script>
+        <div class="icons d-flex justify-content-center align-items-center">
+            <a href="https://www.facebook.com/One4All.world/" class="text-blue"><i class="fa-brands fa-facebook fa-4x"></i></a>
+            <a href="https://www.instagram.com/one4all.world/?hl=fr" class="text-info"><i class="fa-brands fa-instagram fa-4x"></i></a>
+            <a href="https://www.youtube.com/channel/UCuaNm_aJfS8WSpH-oTUHQsg" class="text-danger"><i class="fa-brands fa-youtube fa-4x"></i></a>
+        </div>
 
     </footer>
+    <a href="#" class="gotop"><i class="fa-solid fa-arrow-up-from-bracket fa-3x"></i></a>
+
 </body>
 </html>

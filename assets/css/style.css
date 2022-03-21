@@ -1,14 +1,25 @@
-img {
-    max-height: 200px;
-    display: block;
+.img-carousel>img {
+    width: 500px;
+    height: 500px;
+    border-radius: 500px;
 }
 
 header {
-    height: 400px;
+    height: 50%;
+    width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-color: gray;
     background-position: center;
+}
+
+/* body {
+    background-color: gray;
+} */
+
+main {
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .previous {
@@ -22,15 +33,143 @@ header {
 .infos {
     margin-top: 10px;
 }
-
 .menu {
-    margin-right: 50px;
+    width: 100%;
 }
 
-.infos_and_next {
-    height: 300px;
-    width: 300px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 300px;
+.links {
+    width: 100%;
+    margin-bottom: 10px;
 }
+.dropdown {
+    margin-right: 10px;
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    height: 100px;
+}
+
+.HeaderOne4all {
+    height: 1100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.carousel {
+    width: 100%;
+    max-width: 100%;
+    padding: 5px;
+}
+
+.fleurs{
+    height: 800px;
+}
+
+.fleurs img {
+    min-height: 100%;
+}
+
+.img-ghandi {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 1100px;
+}
+
+.text-vebole {
+    margin-left: 10%;
+}
+
+.constat-title {
+    position: absolute;
+    margin-left: -17px;
+    margin-top: -10px;
+}
+
+.constat-title>img {
+    width: 50%;
+}
+
+.constat-texte {
+    margin-left: 10px;
+}
+
+.more-soutien {
+    margin-right: 10px;
+}
+
+.reseau-text-img>div>img {
+    width: 300px;
+    height: 400px;
+}
+
+#histoire {
+    padding: 20px;
+}
+
+.img-pastille {
+    margin-right: 20px;
+}
+
+.btn-events {
+    margin-bottom: 10px;
+}
+
+footer {
+    height: 150px;
+    width: 100%;
+}
+
+.icons {
+    height: 100%;
+}
+
+.icons> a {
+    padding: 10px;
+}
+
+.split {
+    /* gradient shining border */
+    border-style: solid;
+    border-width: 3px;
+    border-image: linear-gradient(to left, white 1%, black 50%, white 100%) 
+                  100% 0 100% 0/3px 0 3px 0 stretch;
+    
+    line-height: 50px;
+    background-color: #222;
+    color: white;
+    text-align: center;  
+  }
+
+h1 {
+    font-family: 'Hurricane', cursive;
+    font-size: 5em;
+}
+
+h3 {
+    font-family: 'Caveat', cursive;
+}
+
+.gotop {
+    position: fixed;
+    z-index: 200;
+    right: 20px;
+    bottom: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.gotop>i {
+    margin-left: 28px;
+    margin-top: 25px;
+    color: gray;
+}
+
+  

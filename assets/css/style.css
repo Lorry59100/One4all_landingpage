@@ -2,6 +2,40 @@
     width: 500px;
     height: 500px;
     border-radius: 500px;
+    background-size: cover;
+}
+
+.navbar-brand {
+    margin-left: 10px;
+    margin-top: -7px;
+}
+
+#btn-previous {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+#btn-previous>h4 {
+    margin-right: 4px;
+    margin-top: 2px;
+}
+
+#btn-next {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+#btn-next>h4 {
+    margin-left: 4px;
+    margin-top: 2px;
+}
+
+.btn-success {
+    box-shadow: 5px 5px 5px black;
 }
 
 header {
@@ -12,10 +46,6 @@ header {
     background-color: gray;
     background-position: center;
 }
-
-/* body {
-    background-color: gray;
-} */
 
 main {
     margin-left: 10%;
@@ -40,12 +70,6 @@ main {
 .links {
     width: 100%;
     margin-bottom: 10px;
-}
-.dropdown {
-    margin-right: 10px;
-    /* width: 100%; */
-    display: flex;
-    justify-content: center;
 }
 
 .navbar {
@@ -111,6 +135,10 @@ main {
     padding: 20px;
 }
 
+#soutien {
+    padding: 20px;
+}
+
 .img-pastille {
     margin-right: 20px;
 }
@@ -120,7 +148,7 @@ main {
 }
 
 footer {
-    height: 150px;
+    height: 100%;
     width: 100%;
 }
 
@@ -133,7 +161,6 @@ footer {
 }
 
 .split {
-    /* gradient shining border */
     border-style: solid;
     border-width: 3px;
     border-image: linear-gradient(to left, white 1%, black 50%, white 100%) 
@@ -145,15 +172,7 @@ footer {
     text-align: center;  
   }
 
-h1 {
-    font-family: 'Hurricane', cursive;
-    font-size: 5em;
-}
-
-h3 {
-    font-family: 'Caveat', cursive;
-}
-
+/* ANCRE */
 .gotop {
     position: fixed;
     z-index: 200;
@@ -170,6 +189,22 @@ h3 {
     margin-left: 28px;
     margin-top: 25px;
     color: gray;
+}
+
+/* FONTS */
+h1 {
+    font-family: 'Hurricane', cursive;
+    font-size: 5em;
+}
+
+h2 {
+    font-family: 'Caveat', cursive;
+    font-size: 3em;
+}
+
+h3 {
+    font-family: 'Caveat', cursive;
+    font-size: 2em;
 }
 
   

@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
 
     <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <!-- FEUILLES DE STYLE -->
     <link rel="stylesheet" href="assets/css/style.css">
 
@@ -25,29 +28,58 @@
 
     <!-- HEADER -->
     <header>
-        <nav class="navbar navbar-gray bg-dark">
-            <div class="menu d-flex align-items-center justify-content-between">
-              <a class="navbar-brand" href="#">
-                <img src="assets/img/Logo/logo One4all.png" alt="" width="200" height="100" class="d-inline-block align-text-top logo">
-              </a>
 
-              <div class="links d-flex justify-content-around">
-              <a href="#présentation" class="text-decoration-none text-white"><h5>Présentation</h5></a>
-              <a href="#philosophie" class="text-decoration-none text-white"><h5>Philosophie</h5></a>
-              <a href="#constat" class="text-decoration-none text-white"><h5>Notre Constat</h5></a>
-              <a href="#revolution" class="text-decoration-none text-white"><h5>Notre Révolution</h5></a>
-              <a href="#soutien" class="text-decoration-none text-white"><h5>Nos Soutiens</h5></a>
-              <a href="#histoire" class="text-decoration-none text-white"><h5>Notre Histoire</h5></a>
-              <a href="#reseaux" class="text-decoration-none text-white"><h5>Notre Réseau</h5></a>
-              <a href="#evenements" class="text-decoration-none text-white"><h5>Nos Evenements</h5></a>
-              </div>
-              
-                
-            </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/Logo/logo One4all.png" alt="" width="200" height="100" class="d-inline-block align-text-top small-logo">
+            </a>
             
-        </nav>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse bg-dark" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a href="#présentation" class="text-decoration-none text-white"><h5>Présentation</h5></a>
+                </li>
 
-    <div class="d-flex align-items-center justify-content-between HeaderOne4all" style="background-image: url('assets/img/slide_header/HeaderOne4all.jpg');">
+                <li class="nav-item active">
+                    <a href="#philosophie" class="text-decoration-none text-white"><h5>Philosophie</h5></a>
+                </li>
+
+                <li class="nav-item active">
+                    <a href="#constat" class="text-decoration-none text-white"><h5>Notre Constat</h5></a>
+                </li>
+
+                <li class="nav-item active">
+                    <a href="#revolution" class="text-decoration-none text-white"><h5>Notre Révolution</h5></a>
+                </li>
+
+                <li class="nav-item active">
+                    <a href="#soutien" class="text-decoration-none text-white"><h5>Nos Soutiens</h5></a>
+                </li>
+
+                <li class="nav-item active">
+                    <a href="#histoire" class="text-decoration-none text-white"><h5>Notre Histoire</h5></a>
+                </li>
+
+                <li class="nav-item active">
+                    <a href="#reseaux" class="text-decoration-none text-white"><h5>Notre Réseau</h5></a>
+                </li>
+
+                <li class="nav-item active">
+                    <a href="#evenements" class="text-decoration-none text-white"><h5>Nos Evenements</h5></a>
+                </li>
+                
+               
+               
+              </ul>
+             
+            </div>
+          </nav>
+
+    <div class="d-lg-flex align-items-center justify-content-between HeaderOne4all" style="background-image: url('assets/img/slide_header/HeaderOne4all.jpg');">
 
         <div class="logo">
             <img src="assets/img/Logo/logo One4all.png" alt="">
@@ -172,7 +204,7 @@
             <br>
             <h2>#One4All milite activement et mondialement dans plusieurs domaines :</h2>
 
-            <div class="annexe d-flex">
+            <div class="annexe d-lg-flex">
 
                 <div class="fleurs d-flex justify-content-center">
                     <img src="assets/img/A - Présentation/Fleur-5domaines.png" alt="">
@@ -202,7 +234,7 @@
                 </div>
             </div>
 
-            <div class="vebole d-flex bg-dark">
+            <div class="vebole d-lg-flex bg-dark">
                 <div class="more d-flex flex-column justify-content-center">
                 <h3 class="text-white text-vebole">Le Mouvement Mondial #One4All est entièrement autonome, non guidé par des intérêts individuels ou économiques mais alimenté par l’énergie, la motivation et la pugnacité de ses membres et de ses adhérents. 
                     Comme sa devise l’indique “ Un pour tous, Tous pour un”, le Mouvement Altruiste prône la force collective, l’union, l’abnégation, la confiance indéfectible et la réussite désintéressée   au profit d’une réussite collective et Universelle.
@@ -223,7 +255,7 @@
         <div class="split"></div>
         <br>
 
-        <section id="constat" class="d-flex align-items-center">
+        <section id="constat" class="d-lg-flex align-items-center">
             <div class="constats">
                 <div class="constat-title">
                     <img src="assets/img/Constat/bouton-consta.png" alt="" srcset="">
@@ -383,7 +415,7 @@
     <footer style="background-image: url('assets/img/Footer/palmtree.jpg');">
         <script src="assets/js/app.js"></script>
 
-        
+
         
         <div class="icons d-flex justify-content-center align-items-center">
             <a href="https://www.facebook.com/One4All.world/" class="text-blue"><i class="fa-brands fa-facebook fa-4x"></i></a>
@@ -391,7 +423,7 @@
             <a href="https://www.youtube.com/channel/UCuaNm_aJfS8WSpH-oTUHQsg" class="text-danger"><i class="fa-brands fa-youtube fa-4x"></i></a>
         </div>
 
-        <div class="d-flex justify-content-center"><h2 class="text-white">© #One4All Tous droits réservés</h2></div>
+        <h2 class="text-white text-center">© #One4All Tous droits réservés</h2>
 
     </footer>
     <a href="#" class="gotop"><i class="fa-solid fa-arrow-up-from-bracket fa-3x"></i></a>
